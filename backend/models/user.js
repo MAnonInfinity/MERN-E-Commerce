@@ -37,7 +37,7 @@ const userSchema = new mongoose.Schema({
         type: Array,
         default: []
     }
-})
+}, { timestamps: true })
 
 // virtual field
 userSchema.virtual('password')
